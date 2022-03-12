@@ -1,0 +1,19 @@
+{
+  "name": "projectxy",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jan-LucaN/ProjectXY.git"
+  },
+  "author": "Jan-Luca N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jan-LucaN/ProjectXY/issues"
+  },
+  "homepage": "https://github.com/Jan-LucaN/ProjectXY#readme"
+}
