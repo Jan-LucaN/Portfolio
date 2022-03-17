@@ -9,8 +9,10 @@
 
 :root {
     --footer-height: 20vh;
-    --nav-bar-height: 10vh;
-    --main-content-height: 70vh;
+    --nav-bar-height-mobile: 10vh;
+    --nav-bar-height-desktop: 5vh;
+    --main-content-height-mobile: 70vh;
+    --main-content-height-desktop: 75vh;
 }
 
 a {
@@ -39,7 +41,7 @@ footer {
 }
 
 .main-content {
-    height: var(--main-content-height);
+    height: var(--main-content-height-mobile);
     margin: 0 10vw;
     box-shadow: 0 0 10px var(--black);
     background-color: var(--white);
@@ -49,7 +51,7 @@ footer {
     display: flex;
     align-items: center;
     background-color: var(--black);
-    height: var(--nav-bar-height);
+    height: var(--nav-bar-height-mobile);
 }
 
 .nav-bar-home {
@@ -86,7 +88,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--red);
-    height: calc(var(--main-content-height) / 4);
+    height: calc(var(--main-content-height-mobile) / 4);
 }
 
 .introduction {
@@ -100,25 +102,12 @@ footer {
 
 
 @media screen and (min-width: 994px) {
-    .headline-container {
-        flex-direction: row;
-    }
-
-    .headline-hello {
-        color: var(--white);
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-    }
-    .introduction {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .nav-bar {
+        height: 5vh;
     }
 
     .nav-bar-home {
-        font-size: 55px;
+        font-size: 40px;
         font-family: mainFont;
         padding: 0 30px;
     }
@@ -128,7 +117,30 @@ footer {
     }
 
     .nav-bar-contents a {
-        font-size: 25px;
+        font-size: 20px;
         font-family: secondaryFont;
+    }
+
+    .main-content {
+        height: 75vh;
+    }
+
+    .headline-container {
+        flex-direction: row;
+        height: var(--main-content-height-desktop);
+    }
+
+    .headline-hello {
+        color: var(--white);
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .introduction {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
