@@ -7,6 +7,12 @@
     src: url(../assets/Akrobat-Light.otf);
 }
 
+:root {
+    --footer-height: 20vh;
+    --nav-bar-height: 10vh;
+    --main-content-height: 70vh;
+}
+
 a {
     text-decoration: none;
 }
@@ -18,38 +24,51 @@ h1 {
 
 body {
     margin: 0;
-    background-color: var(--white);
+    background-color: #E1D9D1;
 }
 
 footer {
-    margin-top: auto;
+    width: 100%;
+    height: var(--footer-height);
+    background-color: var(--black);
+    color: var(--white);
+    font-family: mainFont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-content {
-        
+    height: var(--main-content-height);
+    margin: 0 10vw;
+    box-shadow: 0 0 10px var(--black);
+    background-color: var(--white);
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
     background-color: var(--black);
+    height: var(--nav-bar-height);
 }
 
 .nav-bar-home {
     color: var(--white);
     font-size: 40px;
     font-family: mainFont;
+    padding: 0 12px;
 }
 
 .nav-bar-contents {
     display: flex;
     margin-left: auto;
     gap: 16px;
+    padding: 0 12px;
 }
 
 .nav-bar-contents a {
     color: var(--white);
-    font-size: 24px;
+    font-size: 20px;
     font-family: secondaryFont;
 }
 
@@ -65,8 +84,9 @@ footer {
     color: var(--white);
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--red);
-    padding: 120px 0;
+    height: calc(var(--main-content-height) / 4);
 }
 
 .introduction {
@@ -88,7 +108,7 @@ footer {
         color: var(--white);
         width: 50%;
         justify-content: center;
-        padding: 300px 0;
+        align-items: center;
     }
     .introduction {
         width: 50%;
