@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jan-LucaN/ProjectXY/issues"
   },
-  "homepage": "https://github.com/Jan-LucaN/ProjectXY#readme"
+  "homepage": "https://github.com/Jan-LucaN/ProjectXY#readme",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
 }

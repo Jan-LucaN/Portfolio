@@ -96,6 +96,12 @@ footer {
 .footer-legals-item {
 }
 
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
 @media screen and (min-width: 994px) {
     .nav-bar {
         height: 5vh;
