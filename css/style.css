@@ -7,14 +7,6 @@
     src: url(../assets/Akrobat-Light.otf);
 }
 
-:root {
-    --footer-height: 20vh;
-    --nav-bar-height-mobile: 10vh;
-    --nav-bar-height-desktop: 5vh;
-    --main-content-height-mobile: 70vh;
-    --main-content-height-desktop: 75vh;
-}
-
 a {
     text-decoration: none;
 }
@@ -24,26 +16,22 @@ h1 {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     margin: 0;
-    background-color: #E1D9D1;
+    background-color: var(--black);
 }
 
 footer {
-    width: 100%;
-    height: var(--footer-height);
-    background-color: var(--black);
     color: var(--white);
-    font-family: mainFont;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 2vw;
 }
 
 .main-content {
-    height: var(--main-content-height-mobile);
-    margin: 0 10vw;
-    box-shadow: 0 0 10px var(--black);
     background-color: var(--white);
 }
 
@@ -51,7 +39,8 @@ footer {
     display: flex;
     align-items: center;
     background-color: var(--black);
-    height: var(--nav-bar-height-mobile);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .nav-bar-home {
@@ -74,12 +63,20 @@ footer {
     font-family: secondaryFont;
 }
 
+.main-content {
+    background-image: url(../assets/img/background.jpg);
+    background-size: cover;
+    display: flex;
+    padding: 20px;
+}
+
 .headline-container {
-    color: var(--black);
+    color: var(--white);
     font-family: secondaryFont;
     font-size: 26px;
     display: flex;
     flex-direction: column;
+    padding-top: 1vh;
 }
 
 .headline-hello {
@@ -87,19 +84,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--red);
-    height: calc(var(--main-content-height-mobile) / 4);
 }
 
-.introduction {
-    padding: 24px;
+.footer-legals {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
 }
-
-.image-myself {
-    background-color: var(--white);
-    margin: 0 -20px;
+.footer-legals-item {
 }
-
 
 @media screen and (min-width: 994px) {
     .nav-bar {
