@@ -4,6 +4,5 @@ anime({
     targets: '.headline-hello', 
     translateX: [-100, 0],
     delay: 400,
-    duration: 2000,
-    easing: 'easeInOutExpo'
+    duration: 1000,
 });
